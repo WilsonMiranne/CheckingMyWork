@@ -9,31 +9,35 @@ int main()
 	std::cout << "Give me a number." << std::endl;												//this line runs properly
 
 
-	std::cin >> numA;																			//this line runs properly
-	numA = (int i = 0; i <=)? (continue the code):(print next line and then end the code)
-	{
-		std::cout << "Error Invalid Input: Not an Intiger" << std::endl;
-	}	
+	std::cin >> numA;
 
 
-	std::cout << "And now give me a mathematical operation." << std::endl;						//this line runs properly
-	std::cin >> operation;																		//this line runs properly
+	if (char 'A', 'a', 'B', 'b', 'C', 'c', 'D', 'd', 'E', 'e', 'F', 'f', 'G', 'g', 'H', 'h', 'I', 'i', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'O', 'o', 'P', 'p', 'Q', 'q', 'R', 'r', 'S', 's', 'T', 't', 'U', 'u', 'V', 'v', 'W', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z', '/', '*', '-', '+', '=', '_', ')', '(', '&', '^', '%', '$', '#', '@', '!', '`', '~', '}', ']', '{'.'[', '>', '<''.', ',';)
 	
-	
-	if (operation != '+','-','*','/','%') 
-	{
-		std::cout << "Error Invalid Input: Not a Mathematical Operator" << std::endl;
-	}
-	
-	
-	std::cout << "And finally, give me another number." << std::endl;							//i think this line is running properly
-	std::cin >> numB;																			//and here is where the code breaks i believe... what went wrong and what can i safely change without risk of breaking my code further?
-	
-	
-	if (numB != 236) 
-	{
-		std::cout << "Error Invalid Input: Not an Intiger" << std::endl;
-	}
+		{
+			std::cout << "Error Invalid Input: Not an Intiger" << std::endl;
+			std::cout << "And now give me a mathematical operation." << std::endl;						//this line runs properly
+			std::cin >> operation;
+		}
+
+
+																				//this line runs properly
+		if (operation != '+', '-', '*', '/', '%')
+		{
+			std::cout << "Error Invalid Input: Not a Mathematical Operator" << std::endl;
+			std::cout << "And finally, give me another number." << std::endl;							//i think this line is running properly
+			std::cin >> numB;
+		}
+
+
+																				//and here is where the code breaks i believe... what went wrong and what can i safely change without risk of breaking my code further?
+
+
+		if (char 'A', 'a', 'B', 'b', 'C', 'c', 'D', 'd', 'E', 'e', 'F', 'f', 'G', 'g', 'H', 'h', 'I', 'i', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'O', 'o', 'P', 'p', 'Q', 'q', 'R', 'r', 'S', 's', 'T', 't', 'U', 'u', 'V', 'v', 'W', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z', '/', '*', '-', '+', '=', '_', ')', '(', '&', '^', '%', '$', '#', '@', '!', '`', '~', '}', ']', '{'.'[', '>', '<''.', ',';)
+		{
+			std::cout << "Error Invalid Input: Not an Intiger" << std::endl;
+		
+		}
 	
 	
 	std::cout << "now sit back. I have the rest taken care of." << std::endl;

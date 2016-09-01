@@ -3,47 +3,48 @@ int main()
 {
 	int numA;
 	int numB;
-	char operation;
+	char operation = '0' ;
 
 	std::cout << "Please provide me with the following:" << std::endl;							//this line runs properly
 	std::cout << "Give me a number." << std::endl;												//this line runs properly
-
+	//cin by definition will not allow you to read from the console and assign a variable
 
 	std::cin >> numA;
-
-
+	if (numA == -858993460)
+		printf("cmon gimme a number \n");
+	printf("%i \n", numA);
+		/*
 	if (char 'A', 'a', 'B', 'b', 'C', 'c', 'D', 'd', 'E', 'e', 'F', 'f', 'G', 'g', 'H', 'h', 'I', 'i', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'O', 'o', 'P', 'p', 'Q', 'q', 'R', 'r', 'S', 's', 'T', 't', 'U', 'u', 'V', 'v', 'W', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z', '/', '*', '-', '+', '=', '_', ')', '(', '&', '^', '%', '$', '#', '@', '!', '`', '~', '}', ']', '{'.'[', '>', '<''.', ',';)
-	
-		{
-			std::cout << "Error Invalid Input: Not an Intiger" << std::endl;
-			std::cout << "And now give me a mathematical operation." << std::endl;						//this line runs properly
-			std::cin >> operation;
-		}
+
+	{
+		std::cout << "Error Invalid Input: Not an Intiger" << std::endl;
+		std::cout << "And now give me a mathematical operation." << std::endl;						//this line runs properly
+		std::cin >> operation;
+	}*/
 
 
-																				//this line runs properly
-		if (operation != '+', '-', '*', '/', '%')
-		{
-			std::cout << "Error Invalid Input: Not a Mathematical Operator" << std::endl;
-			std::cout << "And finally, give me another number." << std::endl;							//i think this line is running properly
-			std::cin >> numB;
-		}
+	//this line runs properly
+	if (operation != '+', '-', '*', '/', '%')
+	{
+		std::cout << "Error Invalid Input: Not a Mathematical Operator" << std::endl;
+		std::cout << "And finally, give me another number." << std::endl;							//i think this line is running properly
+		std::cin >> numB;
+	}
 
 
-																				//and here is where the code breaks i believe... what went wrong and what can i safely change without risk of breaking my code further?
+	//and here is where the code breaks i believe... what went wrong and what can i safely change without risk of breaking my code further?
 
+ /*
+	if (char 'A', 'a', 'B', 'b', 'C', 'c', 'D', 'd', 'E', 'e', 'F', 'f', 'G', 'g', 'H', 'h', 'I', 'i', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'O', 'o', 'P', 'p', 'Q', 'q', 'R', 'r', 'S', 's', 'T', 't', 'U', 'u', 'V', 'v', 'W', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z', '/', '*', '-', '+', '=', '_', ')', '(', '&', '^', '%', '$', '#', '@', '!', '`', '~', '}', ']', '{'.'[', '>', '<''.', ',';)
+	{
+		std::cout << "Error Invalid Input: Not an Intiger" << std::endl;
+	}
+	*/
 
-		if (char 'A', 'a', 'B', 'b', 'C', 'c', 'D', 'd', 'E', 'e', 'F', 'f', 'G', 'g', 'H', 'h', 'I', 'i', 'J', 'j', 'K', 'k', 'L', 'l', 'M', 'm', 'N', 'n', 'O', 'o', 'P', 'p', 'Q', 'q', 'R', 'r', 'S', 's', 'T', 't', 'U', 'u', 'V', 'v', 'W', 'w', 'X', 'x', 'Y', 'y', 'Z', 'z', '/', '*', '-', '+', '=', '_', ')', '(', '&', '^', '%', '$', '#', '@', '!', '`', '~', '}', ']', '{'.'[', '>', '<''.', ',';)
-		{
-			std::cout << "Error Invalid Input: Not an Intiger" << std::endl;
-		
-		}
-	
-	
 	std::cout << "now sit back. I have the rest taken care of." << std::endl;
 
 
-																								//matt said to try a switch statement... i could use the practice anyhow
+	//matt said to try a switch statement... i could use the practice anyhow
 	switch (operation)																			//so i give the switch statement int 'operation' to work with
 	{
 	case '+':																					//god was this annoying. the '' around the +... it took me forever to think about.  i have a program that runs, but not correctly. that might be breaking my program.
@@ -70,7 +71,7 @@ int main()
 		std::cout << "Error Invalid mathematical operation." << std::endl;		//not sure if this is required, but if i can get it all to run properly then this will help me deduce if everything is running properly
 		break;
 	}																																								//((then again what do i know? i'm not a programmer))
-	
+
 	system("pause");
 	return 0;
 }
